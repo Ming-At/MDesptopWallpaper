@@ -1,0 +1,33 @@
+﻿<Window x:Class="MDesptopWallpaper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MDesptopWallpaper"     
+        mc:Ignorable="d" Loaded="Window_Loaded" Closing="Window_Closing"
+        Title="MainWindow" Height="300" Width="545" ResizeMode="NoResize" >
+    <Grid>
+        <Button Content="替换桌面背景" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click"/>
+        <ComboBox x:Name="displayselect" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="DeviceName"/>
+        <Button Content="设置图片路径" HorizontalAlignment="Left" Margin="430,10,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_2"/>
+        <Button Content="恢复桌面背景" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_1"/>
+        <Border HorizontalAlignment="Left" Margin="120,40,0,0" VerticalAlignment="Top" Width="400" BorderBrush="LightSteelBlue"  BorderThickness="1">
+            <TextBlock x:Name="pathselect"  />
+        </Border>
+        <Border HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="510" Height="180" BorderBrush="LightSteelBlue"  BorderThickness="1">
+            <StackPanel Margin="0,5,7,5" >
+                <TextBlock Text="   1.可以设置自定义壁纸路径。"/>
+                <TextBlock Text="   2.替换背景后关闭程序即可。"/>
+                <TextBlock Text="   3.重新打开软件，会恢复桌面壁纸。"/>
+                <TextBlock Text="   4.可以在任务管理器关闭 'MDesptopWallpaper' 进程，会恢复桌面壁纸。"/>
+                <TextBlock Text="   5.尽量使用正常一些的壁纸，以免一些bug发生。"/>
+                <TextBlock Text="   6.可以选择显示器（只可以应用一个显示器😎😎😎）。"/>
+                <TextBlock Text="   7.不要上传到网上。"/>
+                <TextBlock Text="   8.没有任何病毒，请放心使用。"/>
+                <TextBlock Text="   "/>
+                <TextBlock Text="                                                                                       ————— by Ming"/>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>
